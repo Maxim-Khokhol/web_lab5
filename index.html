@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Хохол М.В. ІА-23 Лр 5</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="form">
+        <div class="coolinput">
+            <div>
+                <label for="name-input"  class="text">ПІБ</label>
+                <input
+                        type="text"
+                        class="name input"
+                        id="name-input"
+                        placeholder="ТТТТТТ Т.Т."
+                />
+            </div>
+
+            <div>
+                <label for="phone-input" class="text">Телефон</label>
+                <input
+                        type="text"
+                        class="phone input"
+                        id="phone-input"
+                        placeholder="(XXX)-XXX-XXXX"
+                        maxlength="18"
+                />
+                <span class="operator-error">Помилка</span>
+            </div>
+
+            <div>
+                <label for="id-card-input" class="text">ID-карта</label>
+                <input
+                        type="text"
+                        class="id-card input"
+                        id="id-card-input"
+                        placeholder="ТТ №ЧЧЧЧЧЧ"
+                        maxlength="12"
+                />
+            </div>
+
+
+            <div>
+                <label for="faculty-input" class="text">Факультет</label>
+                <input
+                        type="text"
+                        class="faculty input"
+                        id="faculty-input"
+                        placeholder="Наприклад ФІОТ"
+                        maxlength="4"
+                />
+            </div>
+
+
+            <div>
+                <label for="birthdate-input" class="text">Дата народження</label>
+                <input
+                        type="text"
+                        class="birthdate input"
+                        id="birthdate-input"
+                        placeholder="ДД.ММ.РРРР"
+                        maxlength="10"
+                />
+            </div>
+
+            <button id="validate-btn">Відправити</button>
+
+            <div class="results" id="results-block">
+                <h3>Результати валідації</h3>
+                <ul id="results-list">
+                </ul>
+            </div>
+
+        </div>
+        <div class="table">
+            <input type="color" id="colorPicker" value="#ff0000">
+            <table id="interactiveTable">
+            </table>
+        </div>
+    </div>
+</div>
+<script src="logic1.js"></script>
+<script src="InputNameValidation.js"></script>
+<script src="InputCardIdValidation.js"></script>
+<script src="InputPhoneValidation.js"></script>
+<script src="InputFacultyValidation.js"></script>
+<script src="InputDateValidation.js"></script>
+<script src="table.js"></script>
+</body>
+</html>

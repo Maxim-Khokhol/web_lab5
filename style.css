@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+.error-field {
+    border: 2px solid red !important;
+}
+
+body{
+    user-select: none;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+}
+.operator-error{
+    display: none;
+}
+.container{
+    width: 95vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.results {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: #f9f9f9;
+}
+
+.results ul {
+    list-style: none;
+    padding: 0;
+}
+
+.results ul li {
+    margin-bottom: 5px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+#colorPicker {
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    min-width: 300px;
+    height: 40px;
+}
+.table{
+    width: 30%;
+    min-width: 300px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    max-width: 240px;
+
+    width: 30%;
+    min-width: 300px;
+}
+.coolinput{
+    width: 100%;
+}
+.coolinput input{
+    width: 88%;
+
+}
+.coolinput label {
+    font-size: 0.75rem;
+    color: #818CF8;
+    font-weight: 700;
+    position: relative;
+    top: 0.5rem;
+    margin: 0 0 0 7px;
+    padding: 0 3px;
+    width: fit-content;
+    background-color: white;
+}
+
+.coolinput input[type=text].input {
+    padding: 11px 10px;
+    font-size: 0.75rem;
+    border: 2px #818CF8 solid;
+    border-radius: 5px;
+}
+
+.coolinput input[type=text].input:focus {
+    outline: none;
+}
+button {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    margin-top: 20px;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+}
+
+button:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+button:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px) translateX(-50%);
+}
+
+button:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px) translateX(-50%);
+}
